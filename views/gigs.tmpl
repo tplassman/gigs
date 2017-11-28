@@ -1,0 +1,15 @@
+{{ define "title" }}
+  All Gigs
+{{ end }}
+{{ define "content" }}
+  <h1>Gigs,</h1>
+  <ul>
+    {{ range . }}
+      <li>
+        <h3>{{ .Id }} - {{ .Name }}</h3>
+        <p>{{ .Description }}</p>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
+

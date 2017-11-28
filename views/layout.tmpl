@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      {{ block "title" . }}
+        Gigs
+      {{ end }}
+    </title>
+    <style>
+      html, body {
+        padding: 0;
+        border: 0;
+        margin: 0;
+      }
+      body {
+        width: 90%;
+        max-width: 992px;
+        margin: 0 auto;
+      }
+      header,
+      main,
+      footer {
+        padding: 24px 0;
+      }
+      header {
+        border-bottom: 1px solid #AAA;
+      }
+      footer {
+        border-top: 1px solid #AAA;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" title="Home">Home</a>
+        <a href="/gigs" title="Gigs">Gigs</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ block "content" . }}
+        <p>Welcome to Gig</p>
+      {{ end }}
+    </main>
+
+    <footer>
+      <p>Copyright Trevor Industries 2017,</p>
+    </footer>
+  </body>
+</html>
+
