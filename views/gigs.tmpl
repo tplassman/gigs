@@ -8,6 +8,9 @@
       <li>
         <h3>{{ .Id }} - {{ .Name }}</h3>
         <p>{{ .Description }}</p>
+        <a href="/gigs/{{ .Id }}" title="Details">
+          Details
+        </a>
       </li>
     {{ end }}
   </ul>
